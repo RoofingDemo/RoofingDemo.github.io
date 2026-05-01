@@ -127,19 +127,15 @@ export default function ServiceAreaPage() {
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4 text-balance">
             Roofing Services in {city} and Surrounding Areas
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Proudly serving homeowners throughout the greater {city} metropolitan area with professional roofing solutions.
-          </p>
+
         </div>
       </section>
 
       {/* Map and Primary Location */}
-      <section className="py-16 bg-background">
+      {/* <section className="py-16 bg-background">
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid gap-12 lg:grid-cols-2 items-start">
-            {/* Map Placeholder */}
             <div className="relative aspect-square max-w-lg mx-auto lg:mx-0 bg-secondary rounded-lg border border-border flex items-center justify-center">
-              {/* PLACEHOLDER: Service area map — client to provide (600x600px) */}
               <div className="text-center p-8">
                 <MapPin className="h-20 w-20 text-primary mx-auto mb-4" />
                 <p className="font-serif text-xl font-bold text-foreground mb-2">
@@ -149,13 +145,11 @@ export default function ServiceAreaPage() {
                   Coverage radius around {city}
                 </p>
                 <p className="text-sm text-muted-foreground mt-4">
-                  {/* PLACEHOLDER: Map image or Google Maps embed — client to provide */}
                   Interactive map showing our service coverage
                 </p>
               </div>
             </div>
 
-            {/* Primary Location Info */}
             <div>
               <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
                 {primaryArea.name} — Our Home Base
@@ -203,14 +197,14 @@ export default function ServiceAreaPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Dynamic Service Areas Chips */}
       <section className="py-16 bg-secondary">
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center mb-10">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Serving {city} and Surrounding Areas
+              Expert roofing services near you
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               We proudly provide professional roofing services to homeowners throughout the greater {city} metropolitan area.
@@ -232,7 +226,7 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* All Service Areas Grid */}
-      <section className="py-16 bg-background">
+      {/* <section className="py-16 bg-background">
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -274,7 +268,7 @@ export default function ServiceAreaPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Location-specific SEO sections */}
       <section className="py-16 bg-background">
@@ -284,17 +278,18 @@ export default function ServiceAreaPage() {
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2">
-            {SERVICE_AREAS.slice(0, 4).map((area) => (
+            {dynamicAreas.slice(0, 4).map((area) => (
               <div key={area.name} className="prose prose-sm max-w-none">
                 <h3 className="font-serif text-xl font-bold text-foreground mb-3">
-                  Roofing in {area.name}
+                  Roofing in {area}
                 </h3>
                 {/* PLACEHOLDER: Location-specific content — client to customize for SEO */}
                 <p className="text-muted-foreground">
-                  Looking for a reliable roofer in {area.name}? {shopName} provides comprehensive roofing services including roof replacement, roof repair, storm damage restoration, and routine maintenance. Our team serves {area.name} homeowners with the same commitment to quality that has made us a trusted name in the {city} area for over 20 years.
+                  Looking for a reliable roofer in {area}? {shopName} provides comprehensive roofing services including roof replacement, roof repair, storm damage restoration, and routine maintenance. Our team serves {area.name} homeowners with the same commitment to quality that has made us a trusted name in the {city} area for over 20 years.
                 </p>
+        
                 <p className="text-muted-foreground">
-                  Contact us today for a free inspection at your {area.name} home. We offer flexible financing, work with all insurance carriers, and stand behind our work with comprehensive warranties.
+                  Contact us today for a free inspection at your {area} home. We offer flexible financing, work with all insurance carriers, and stand behind our work with comprehensive warranties.
                 </p>
               </div>
             ))}
