@@ -1,0 +1,17 @@
+{
+  "Charlotte": ["Matthews", "Concord", "Huntersville", "Mooresville", "Gastonia", "Kannapolis", "Mint Hill", "Pineville", "Harrisburg", "Indian Trail", "Cornelius", "Davidson"],
+  "_parents": {
+    "Matthews": "Charlotte",
+    "Concord": "Charlotte",
+    "Huntersville": "Charlotte",
+    "Mooresville": "Charlotte",
+    "Gastonia": "Charlotte",
+    "Kannapolis": "Charlotte",
+    "Mint Hill": "Charlotte",
+    "Pineville": "Charlotte",
+    "Harrisburg": "Charlotte",
+    "Indian Trail": "Charlotte",
+    "Cornelius": "Charlotte",
+    "Davidson": "Charlotte"
+  }
+}
